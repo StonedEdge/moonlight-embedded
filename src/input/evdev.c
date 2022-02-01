@@ -745,8 +745,8 @@ void evdev_create(const char* device, struct mapping* mappings, bool verbose, in
     (libevdev_has_event_code(evdev, EV_KEY, BTN_TRIGGER) ||
      libevdev_has_event_code(evdev, EV_KEY, BTN_A) ||
      libevdev_has_event_code(evdev, EV_KEY, BTN_1) ||
-     libevdev_has_event_code(evdev, EV_ABS, ABS_RX) ||
-     libevdev_has_event_code(evdev, EV_ABS, ABS_RY) ||
+     libevdev_has_event_code(evdev, EV_ABS, ABS_RX) &&
+     libevdev_has_event_code(evdev, EV_ABS, ABS_RY) &&
      libevdev_has_event_code(evdev, EV_ABS, ABS_RZ) ||
      libevdev_has_event_code(evdev, EV_ABS, ABS_THROTTLE) ||
      libevdev_has_event_code(evdev, EV_ABS, ABS_RUDDER) ||
